@@ -9,8 +9,25 @@
     <title>Videos</title>
 </head>
 <body>
-    <h1>video</h1>
+
+    <!-- pode nao funcionar em outros navegadores -->
+    <h1>video1</h1>
 
     <video src="./src/video/9084238-hd_1920_1080_30fps.mp4" width="500" controls autoplay muted loop poster=""></video>
+
+    <!-- o jeito que ficaria muito pesado para o city do cliente -->
+    <h1>video 2</h1>
+
+    <video controls width="500">
+    <source src="./src/video/9084238-hd_1920_1080_30fps.mp4" type="video/mp4">  
+    <source src="./src/video/9084238-hd_1920_1080_30fps.webm" type="video/mp4"> 
+
+    <p>Essse navagador não tem suporte a tag Video</p>
+    </video>
+
+    <!-- o jeto mais aconselhado de fazer  -->
+    <h1>video 3</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4vsTgt17Rko?si=uetZBr1w1fa-c9Vj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
